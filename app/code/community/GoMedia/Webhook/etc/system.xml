@@ -1,0 +1,40 @@
+<config>
+    <tabs>
+        <gomedia_extensions translate="label"  module="webhook">
+            <label>Go Media Extensions</label>
+            <sort_order>99999</sort_order>
+        </gomedia_extensions>
+    </tabs>
+    <sections>
+        <webhook translate="label" module="webhook">
+            <label>Web Hook Settings</label>
+            <tab>gomedia_extensions</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <order translate="label">
+                    <label>Order Web Hook</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <url>
+                            <label>URL</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[This URL is fired when an order is created or updated. The order data is posted to the URL.]]></comment>
+                        </url>
+                    </fields>
+                </order>
+            </groups>
+        </webhook>
+    </sections>
+</config>
